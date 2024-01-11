@@ -35,6 +35,7 @@ dotenv.config({ path: '/usr/src/ssl-auto-renew/.env' });
 
 ### certbot_script.sh
 - 인증서 갱신은 1시간에 5번까지만 가능하므로 `--dry-run`을 잘 이용할 것
+- 만약 root 환경에서 모든 세팅을 진행한다면 NODE_PATH를 `$(which node)`로 대체 가능
 ```sh
 #!/bin/bash
 
